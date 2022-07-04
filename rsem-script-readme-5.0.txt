@@ -13,7 +13,6 @@ Software Required:
 
 
 Usage Instructions:
-
 (if you feel lost in the Linux command line environment, please check out this friendly tutorial:
 https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
 
