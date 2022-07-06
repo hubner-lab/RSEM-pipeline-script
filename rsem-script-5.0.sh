@@ -376,7 +376,7 @@ then # for paired-end seq
 		     --twopassMode Basic \
 		     --outFilterMultimapNmax 1 \
 		     --quantMode TranscriptomeSAM \
-		     --runThreadN 20 \
+		     --runThreadN $n_threads \
 		     --outFileNamePrefix "$RNASeq_data_path/rsem-pipeline-output-data/star_$sample_name/"
 	done
 else # for single-read seq
@@ -397,7 +397,7 @@ else # for single-read seq
 		     --twopassMode Basic \
 		     --outFilterMultimapNmax 1 \
 		     --quantMode TranscriptomeSAM \
-		     --runThreadN 20 \
+		     --runThreadN $n_threads \
 		     --outFileNamePrefix "$RNASeq_data_path/rsem-pipeline-output-data/star_$sample_name/"
 	done
 fi
