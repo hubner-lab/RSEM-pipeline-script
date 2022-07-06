@@ -14,9 +14,9 @@ it can be used for estimating gene and isoform expression levels, given RNA-Seq 
 
 Software Required:
 
-1. RSEM
-2. STAR
-3. fastp
+1. RSEM   (https://github.com/deweylab/RSEM)
+2. STAR   (https://github.com/alexdobin/STAR)
+3. fastp  (https://github.com/OpenGene/fastp)
 
 
 Usage Instructions:
