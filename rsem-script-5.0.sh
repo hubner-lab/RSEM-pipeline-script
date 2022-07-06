@@ -8,9 +8,8 @@ cat << EOF
 
 Introduction:
 
-rsem-script-5.0.sh is a bash script that automates the RSEM pipeline.
-it can be used for estimating gene and isoform expression levels,
-given RNA-Seq data obtained from organisms with a reference genome and annotation.
+rsem-script-5.0.sh is a bash script that automates the RSEM pipeline, and meant to simplify things as much as possible.
+it can be used for estimating gene and isoform expression levels, given RNA-Seq data obtained from organisms with a reference genome and annotation.
 
 
 Software Required:
