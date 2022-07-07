@@ -50,7 +50,8 @@ human
         ├── K562.rep2.R2.fastq.gz
 
 
-in case your samples are split into several fastq files per one sample (sequencing across multiple lanes might generate a separate file per lane), you can use the 'cat' command to concatenate them together, as specified below:
+in case your samples are split into several fastq files per one sample (sequencing across multiple lanes might generate a separate file per lane),
+you can use the 'cat' command to concatenate them together, as specified below:
 
 cat [filename 1] [filename 2] ... [filename N] > [new filename]
 
@@ -65,7 +66,8 @@ we can use the 'cat' command as followed:
 
 cat K562.rep1.R1_L001.fastq.gz K562.rep1.R1_L002.fastq.gz K562.rep1.R1_L003.fastq.gz > K562.rep1.R1.fastq.gz
 
-# this will create the file: 'K562.rep1.R1.fastq.gz' containing the sequencing data from all 3 files given by the order in the command, ready to be analyzed in the pipeline
+# this will create the file: 'K562.rep1.R1.fastq.gz' containing the sequencing data from all 3 files given by the order in the command,
+  ready to be analyzed in the pipeline
 
 Second,
 run the execution command specified below.
