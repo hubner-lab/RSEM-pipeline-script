@@ -49,7 +49,8 @@ First,
 	    ├── K562.rep2.R2.fastq.gz
 
 
-    in case your samples are split into several fastq files per one sample (sequencing across multiple lanes might generate a separate file per lane),
+    in case your samples are split into several fastq files per one sample
+    (sequencing across multiple lanes might generate a separate file for each lane),
     you can use the 'cat' command to concatenate them together, as specified below:
 
     cat [filename 1] [filename 2] ... [filename N] > [new filename]
@@ -92,8 +93,10 @@ bash /home/roy/scripts/rsem-script-5.0.sh \
 > output.txt \
 &
 
+('\' allows newlines within a command)
+
 please notice:
-the script is expecting 3 arguments to run properly:
+the script needs 3 arguments to run properly:
 1. a path to the reference genome data dir 
 2. a path to the RNA-Seq data dir
 3. no. of threads for multithread proccesing (if you're not sure - enter '10')
