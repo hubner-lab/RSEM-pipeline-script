@@ -20,11 +20,11 @@ First,
     prepare the following dirs:
     1. Genome data dir
        contains:
-       1.1. a reference genome FASTA file  (file extension: *.fa or *.fasta)
-       1.2. an annotation GTF file         (file extension: *.gtf)
+       - a reference genome FASTA file  (file extension: *.fa or *.fasta)
+       - an annotation GTF file         (file extension: *.gtf)
     2. RNA-Seq data dir
        contains:
-       RNA-Seq FASTQ files  (file extension: *.fastq or *.fastq.gz
+       - RNA-Seq FASTQ files  (file extension: *.fastq or *.fastq.gz
        please notice:
        for paired-end sequencing data, filenames should be marked with 'R1' or 'R2' in one of the following formats:
        1. sample_name_R#.fastq ('R?' is between '_' and '.')
