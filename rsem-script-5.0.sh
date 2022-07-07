@@ -6,6 +6,7 @@ Readme()
 {
 cat << EOF
 
+
 Introduction:
 
 rsem-script-5.0.sh is a bash script that automates the RSEM pipeline, and meant to simplify things as much as possible.
