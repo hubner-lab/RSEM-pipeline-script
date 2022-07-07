@@ -66,8 +66,9 @@ First,
 
     cat K562.rep1.R1_L001.fastq.gz K562.rep1.R1_L002.fastq.gz K562.rep1.R1_L003.fastq.gz > K562.rep1.R1.fastq.gz
 
-    * this will create the file: 'K562.rep1.R1.fastq.gz' containing the sequencing data from all 3 files given by the order in the command,
-      ready to be analyzed in the pipeline
+    * this will create the file: 'K562.rep1.R1.fastq.gz',
+      containing the sequencing data from all 3 files by the order given in the command,
+      and ready to be analyzed in the pipeline.
 
 Second,
 
