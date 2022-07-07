@@ -17,60 +17,60 @@ https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
 
 First,
 
-	prepare the following dirs:
-	1. Genome data dir
-	   contains:
-	   1.1. a reference genome FASTA file  (file extension: *.fa or *.fasta)
-	   1.2. an annotation GTF file         (file extension: *.gtf)
-	2. RNA-Seq data dir
-	   contains:
-	   RNA-Seq FASTQ files  (file extension: *.fastq or *.fastq.gz
-	   please notice:
-	   for paired-end sequencing data, filenames should be marked with 'R1' or 'R2' in one of the following formats:
-	   1. sample_name_R#.fastq ('R?' is between '_' and '.')
-	   2. sample_name.R#.fastq ('R?' is between '.' and '.')
-	   as '#' can be '1' or '2'
+    prepare the following dirs:
+    1. Genome data dir
+       contains:
+       1.1. a reference genome FASTA file  (file extension: *.fa or *.fasta)
+       1.2. an annotation GTF file         (file extension: *.gtf)
+    2. RNA-Seq data dir
+       contains:
+       RNA-Seq FASTQ files  (file extension: *.fastq or *.fastq.gz
+       please notice:
+       for paired-end sequencing data, filenames should be marked with 'R1' or 'R2' in one of the following formats:
+       1. sample_name_R#.fastq ('R?' is between '_' and '.')
+       2. sample_name.R#.fastq ('R?' is between '.' and '.')
+       as '#' can be '1' or '2'
+       
+    for example:
 
-	for example:
-
-	human
-	└── LSLNGS2015
-	    ├── GENOME_data
-	    │   ├── Homo_sapiens.GRCh38.86.gtf
-	    │   ├── Homo_sapiens.GRCh38.dna.primary_assembly.fa
-	    └── RNASEQ_data
-		├── GM12878.rep1.R1.fastq.gz
-		├── GM12878.rep1.R2.fastq.gz
-		├── GM12878.rep2.R1.fastq.gz
-		├── GM12878.rep2.R2.fastq.gz
-		├── K562.rep1.R1.fastq.gz
-		├── K562.rep1.R2.fastq.gz
-		├── K562.rep2.R1.fastq.gz
-		├── K562.rep2.R2.fastq.gz
+    human
+    └── LSLNGS2015
+        ├── GENOME_data
+        │   ├── Homo_sapiens.GRCh38.86.gtf
+        │   ├── Homo_sapiens.GRCh38.dna.primary_assembly.fa
+        └── RNASEQ_data
+	    ├── GM12878.rep1.R1.fastq.gz
+	    ├── GM12878.rep1.R2.fastq.gz
+	    ├── GM12878.rep2.R1.fastq.gz
+	    ├── GM12878.rep2.R2.fastq.gz
+	    ├── K562.rep1.R1.fastq.gz
+	    ├── K562.rep1.R2.fastq.gz
+	    ├── K562.rep2.R1.fastq.gz
+	    ├── K562.rep2.R2.fastq.gz
 
 
-	in case your samples are split into several fastq files per one sample (sequencing across multiple lanes might generate a separate file per lane),
-	you can use the 'cat' command to concatenate them together, as specified below:
+    in case your samples are split into several fastq files per one sample (sequencing across multiple lanes might generate a separate file per lane),
+    you can use the 'cat' command to concatenate them together, as specified below:
 
-	cat [filename 1] [filename 2] ... [filename N] > [new filename]
+    cat [filename 1] [filename 2] ... [filename N] > [new filename]
 
-	* this will create a new file containing the concatenated text from all files given before the '>' charecter.
+    * this will create a new file containing the concatenated text from all files given before the '>' charecter.
 
-	for example, let's look at the forward read (Read 1) of sample 'K562.rep1'.
-	in case it's split into the following 3 fastq files:
-	K562.rep1.R1_L001.fastq.gz
-	K562.rep1.R1_L002.fastq.gz
-	K562.rep1.R1_L003.fastq.gz
-	we can use the 'cat' command as followed:
+    for example, let's look at the forward read (Read 1) of sample 'K562.rep1'.
+    in case it's split into the following 3 fastq files:
+    K562.rep1.R1_L001.fastq.gz
+    K562.rep1.R1_L002.fastq.gz
+    K562.rep1.R1_L003.fastq.gz
+    we can use the 'cat' command as followed:
 
-	cat K562.rep1.R1_L001.fastq.gz K562.rep1.R1_L002.fastq.gz K562.rep1.R1_L003.fastq.gz > K562.rep1.R1.fastq.gz
+    cat K562.rep1.R1_L001.fastq.gz K562.rep1.R1_L002.fastq.gz K562.rep1.R1_L003.fastq.gz > K562.rep1.R1.fastq.gz
 
-	* this will create the file: 'K562.rep1.R1.fastq.gz' containing the sequencing data from all 3 files given by the order in the command,
-	  ready to be analyzed in the pipeline
+    * this will create the file: 'K562.rep1.R1.fastq.gz' containing the sequencing data from all 3 files given by the order in the command,
+      ready to be analyzed in the pipeline
 
 Second,
 
-	run the execution command specified below.
+    run the execution command specified below.
 
 
 Execution Command:
